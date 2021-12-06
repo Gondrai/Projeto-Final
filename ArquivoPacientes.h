@@ -7,7 +7,6 @@ class ArquivoPacientes
 private:
     vector<Paciente> pacientes; //vetor para armazenar os pacientes
     vector<DateInOut> dateInOut; //vetor para armazenar as datas de saida e entrada de cada um
-    int data_in_out[11]; // data de entrada e saída
 
 public:
     ArquivoPacientes();
