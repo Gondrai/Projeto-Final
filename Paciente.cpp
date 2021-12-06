@@ -1,7 +1,6 @@
 #include <string>
 #include <vector>
 #include <iostream>
-//o peito do pé de pedro é preto
 #include "Paciente.h"
 
 using namespace std;
