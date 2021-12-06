@@ -1,3 +1,7 @@
+#include <string>
+#include <vector>
+#include <iostream>
+#include "Sala.h"
 class Sala
 {
 private:
