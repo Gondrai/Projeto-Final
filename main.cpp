@@ -6,6 +6,7 @@
 #include <stdlib.h>
 #include "Paciente.h"
 #include "Leito.h"
+#include "ArquivoPacientes.h"
 using namespace std;
 
 // Estrutura para salvar data de pacientes
