@@ -9,6 +9,8 @@
 #include "ArquivoPacientes.h"
 #include "Sala.h"
 #include "DateInOut.h"
+#include "Ala.h"
+#include "Hospital.h"
 
 using namespace std;
 int main()
