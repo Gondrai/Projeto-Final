@@ -1,6 +1,3 @@
-#include <string>
-#include <vector>
-#include <iostream>
 #include "Sala.h"
 
 Sala::Sala() {}
@@ -11,7 +8,7 @@ Sala::Sala(int total_leitos)
     for (int i = 0; i < total_leitos; i++)
     {
         Leito leito;
-        leito.set_ocupacao(0);
+        leito.set_ocupacao(false);
         this->leitos.push_back(leito);
     }
 }
@@ -54,7 +51,7 @@ int Sala::get_numero_leitos_ocupados()
 {
     int total = 0;
     for (int i = 0; i < this->leitos.size(); i++)
-        if (this->leitos[i].get_ocupacao() == 1)
+        if (this->leitos[i].get_ocupacao())
             total += 1;
     return total;
 }
@@ -64,7 +61,7 @@ int Sala::get_numero_leitos_desocupados()
 {
     int total = 0;
     for (int i = 0; i < this->leitos.size(); i++)
-        if (this->leitos[i].get_ocupacao() == 0)
+        if (!this->leitos[i].get_ocupacao())
             total += 1;
     return total;
 }
