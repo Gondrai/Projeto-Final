@@ -13,7 +13,7 @@ public:
     Leito(bool valor);
     ~Leito();
     void set_ocupacao(bool valor); //Definir como ocupado ou desocupado
-    int get_ocupacao();
+    bool get_ocupacao();
 };
 
 #endif
