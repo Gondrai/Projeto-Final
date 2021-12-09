@@ -1,7 +1,5 @@
-#include <string>
-#include <iostream>
-#include "Paciente.h"
 #include "DateInOut.h"
+
 class DateInOut
 {
 public:
