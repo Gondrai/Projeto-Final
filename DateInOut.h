@@ -1,3 +1,6 @@
+#ifndef DATEINOUT_H
+#define DATEINOUT_H
+
 #include <time.h>
 #include <cstdlib>
 // Estrutura para salvar data de pacientes
@@ -23,3 +26,5 @@ public:
     struct Date get_Date_in(); // Retorna a data de entrada
     struct Date get_Date_out(); // Retorna a data de saída
 };
+
+#endif
