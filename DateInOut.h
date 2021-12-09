@@ -19,8 +19,8 @@ class DateInOut
 public:
     struct Date *in;  // Data de entrada
     struct Date *out; // Data de saída
-    DateInOut(){in = out = NULL;}
-    ~DateInOut(){delete in; delete out; in = out = NULL;}
+    DateInOut(){this->in = this->out = NULL;}
+    ~DateInOut(){delete this->in; delete this->out;}
     void gen_Date_in(); // Adiciona a data atual na variável da data de entrada
     void gen_Date_out(); // Adiciona a data atual na variável da data de saída
     struct Date *get_Date_in(); // Retorna a data de entrada
