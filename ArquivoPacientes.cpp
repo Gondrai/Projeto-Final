@@ -1,6 +1,3 @@
-#include <string>
-#include <vector>
-#include <iostream>
 #include "ArquivoPacientes.h"
 
 using namespace std;
@@ -11,25 +8,9 @@ ArquivoPacientes::ArquivoPacientes()
 
 //Método para criar pacientes
 void ArquivoPacientes::Create(Paciente p)
-{
-    struct tm *data_tempo;
-    time_t segundos;
-    time(&segundos);
-    data_tempo = localtime(&segundos);
-
-    //Estrutura para armazenar a data na variável date
+{   
     DateInOut dateIn;
-    struct Date date;
-    date.day = data_tempo->tm_mday;
-    date.mon = data_tempo->tm_mon + 1;
-    date.year = data_tempo->tm_year + 1900;
-    date.hour = data_tempo->tm_hour;
-    date.min = data_tempo->tm_min;
-    date.sec = data_tempo->tm_sec;
-    date.valid = false;      
-    dateIn.in = date;
-    dateIn.out = date;           // Como valid é falso, essa não é uma data de saída valida, logo não sera utilizada, pois o paciente acabou de entrar
-    
+    dateIn.gen_Date_in();
     this->pacientes.push_back(p);      // pushback adiciona um novo
     this->dateInOut.push_back(dateIn); // pushback date in
 }
@@ -37,23 +18,9 @@ void ArquivoPacientes::Create(Paciente p)
 //Método que marca a saída (alta) de um paciente
 void ArquivoPacientes::MarcarSaida(string cpf)
 {
-    struct tm * data_tempo;
-    time_t segundos;
-    time(&segundos);
-    data_tempo = localtime(&segundos);
-
-    struct Date date;
-    date.day = data_tempo->tm_mday;
-    date.mon = data_tempo->tm_mon + 1;
-    date.year = data_tempo->tm_year + 1900;
-    date.hour = data_tempo->tm_hour;
-    date.min = data_tempo->tm_min;
-    date.sec = data_tempo->tm_sec;
-    date.valid = true;      // Marca como uma data de saida valida
-
     // Marca a saída do paciente
     int pos = this->ReadPos(cpf);
-    this->dateInOut[pos].out = date;
+    this->dateInOut[pos].gen_Date_out();
     this->pacientes[pos].set_situacao("alta");
 }
 
@@ -72,7 +39,8 @@ void ArquivoPacientes::Update(Paciente p, int i)
 //Remove o último paciente
 void ArquivoPacientes::Delete()
 {
-    this->pacientes.pop_back(); //remove o ultimo elemento do vetor
+    this->pacientes.pop_back(); //remove o ultimo paciente do vetor
+    this->dateInOut.pop_back();
 }
 
 //Remove o paciente pelo CPF
