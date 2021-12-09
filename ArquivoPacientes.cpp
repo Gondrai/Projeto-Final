@@ -1,6 +1,4 @@
 #include "ArquivoPacientes.h"
-
-using namespace std;
 //Construtor
 ArquivoPacientes::ArquivoPacientes()
 {
