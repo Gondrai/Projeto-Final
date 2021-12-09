@@ -2,7 +2,6 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include <time.h>
 #include <stdlib.h>
 #include "Paciente.h"
 #include "Leito.h"
