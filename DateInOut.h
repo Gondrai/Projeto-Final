@@ -1,5 +1,3 @@
-#include <string>
-#include <vector>
 // Estrutura para salvar data de pacientes
 struct Date
 {
