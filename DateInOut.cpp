@@ -1,12 +1,15 @@
 #include "DateInOut.h"
 
 DateInOut::DateInOut(){
-	this->in.day = -1;
-	this->in.mon = -1;
-	this->in.year = -1;
-	this->in.hour = -1;
-	this->in.min = -1;
-	this->in.sec = -1;
+	struct Date data;
+	data.day = -1;
+	data.mon = -1;
+	data.year = -1;
+	data.hour = -1;
+	data.min = -1;
+	data.sec = -1;
+	this->in = data;
+	this->out = data;
 }
 
 void DateInOut::gen_Date_in(){
