@@ -1,3 +1,6 @@
+#ifndef PACIENTE_H
+#define PACIENTE_H
+
 #include <string>
 #include <vector>
 
@@ -29,3 +32,5 @@ public:
     string get_tipo_s();
     string get_cpf();
 };
+
+#endif
