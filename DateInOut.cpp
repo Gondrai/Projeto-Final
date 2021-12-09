@@ -36,10 +36,10 @@ void DateInOut::gen_Date_out(){
     // Salva quando o usuário saiu
 }
 
-struct Date DateInOut::get_Date_in(){
-    return *in;
+struct Date *DateInOut::get_Date_in(){
+    return in;
 }
 
-struct Date DateInOut::get_Date_out(){
-    return *out;
+struct Date *DateInOut::get_Date_out(){
+    return out;
 }
