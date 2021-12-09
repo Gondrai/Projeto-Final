@@ -1,3 +1,4 @@
+#include <time.h>
 // Estrutura para salvar data de pacientes
 struct Date
 {
