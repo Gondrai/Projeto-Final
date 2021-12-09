@@ -14,7 +14,7 @@ void DateInOut::gen_Date_in(){
     date->hour = data_tempo->tm_hour;
     date->min = data_tempo->tm_min;
     date->sec = data_tempo->tm_sec;
-    in = date;
+    this->in = date;
     // Salva quando o usuário entrou
 }
 
@@ -32,14 +32,14 @@ void DateInOut::gen_Date_out(){
     date->hour = data_tempo->tm_hour;
     date->min = data_tempo->tm_min;
     date->sec = data_tempo->tm_sec;
-    out = date;
+    this->out = date;
     // Salva quando o usuário saiu
 }
 
 struct Date *DateInOut::get_Date_in(){
-    return in;
+    return this->in;
 }
 
 struct Date *DateInOut::get_Date_out(){
-    return out;
+    return this->out;
 }
