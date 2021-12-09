@@ -1,9 +1,13 @@
+#ifndef ARQUIVOPACIENTES_H
+#define ARQUIVOPACIENTES_H
+
 #include <string>
 #include <vector>
 #include "Paciente.h"
 #include "DateInOut.h"
 
 using namespace std;
+
 class ArquivoPacientes
 {
 private:
@@ -24,3 +28,5 @@ public:
     int TotalInternados();            // Total de internados
     DateInOut getDataPaciente(int pos); // Retorna as datas de um paciente
 };
+
+#endif
