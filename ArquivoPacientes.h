@@ -1,6 +1,7 @@
 #include <string>
 #include <vector>
 #include "Paciente.h"
+#include "DateInOut.h"
 
 using namespace std;
 class ArquivoPacientes
