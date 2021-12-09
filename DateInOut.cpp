@@ -1,10 +1,19 @@
 #include "DateInOut.h"
 
-class DateInOut
-{
-public:
-    struct Date in;  // Data de entrada
-    struct Date out; // Data de saída
-};
+void DateInOut::gen_Date_in(){
+    struct tm *data_tempo;
+    time_t segundos;
+    time(&segundos);
+    data_tempo = localtime(&segundos);
 
-// Salva quando o usuário entrou e quanto saiu
+    //Estrutura para armazenar a data na variável date
+    struct Date *date = new struct Date();
+    date->day = data_tempo->tm_mday;
+    date->mon = data_tempo->tm_mon + 1;
+    date->year = data_tempo->tm_year + 1900;
+    date->hour = data_tempo->tm_hour;
+    date->min = data_tempo->tm_min;
+    date->sec = data_tempo->tm_sec;
+    in = date;
+}
+// Salva quando o usuário entrou
