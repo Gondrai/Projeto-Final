@@ -1,7 +1,9 @@
 #include <string>
 #include <vector>
-#include <iostream>
-#include "Sala.h"
+#include "Leito.h"
+
+using namespace std;
+
 class Sala
 {
 private:
