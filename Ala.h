@@ -1,4 +1,5 @@
 #include <string>
+#include "Sala.h"
 
 class Ala
 {
