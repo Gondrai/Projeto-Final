@@ -1,5 +1,6 @@
 #include <string>
 #include <vector>
+#include "Paciente.h"
 
 using namespace std;
 class ArquivoPacientes
