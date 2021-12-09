@@ -6,7 +6,6 @@ ArquivoPacientes::ArquivoPacientes()
 {
 }
 
-//MÃ©todo para criar pacientes
 void ArquivoPacientes::Create(Paciente p)
 {   
     DateInOut dateIn;
@@ -15,35 +14,29 @@ void ArquivoPacientes::Create(Paciente p)
     this->dateInOut.push_back(dateIn); // pushback date
 }
 
-//MÃ©todo que marca a saÃ­da (alta) de um paciente
 void ArquivoPacientes::MarcarSaida(string cpf)
 {
-    // Marca a saÃ­da do paciente
     int pos = this->ReadPos(cpf);
     this->dateInOut[pos].gen_Date_out();
     this->pacientes[pos].set_situacao("alta");
 }
 
-//Retorna um paciente pela posiÃ§Ã£o
 Paciente ArquivoPacientes::Read(int i)
 {
     return this->pacientes[i];
 }
 
-//MÃ©todo que atualiza um paciente, passando seus dados e a posiÃ§Ã£o
 void ArquivoPacientes::Update(Paciente p, int i)
 {
     this->pacientes[i] = p;
 }
 
-//Remove o Ãºltimo paciente
 void ArquivoPacientes::Delete()
 {
     this->pacientes.pop_back(); //remove o ultimo paciente do vetor
     this->dateInOut.pop_back();
 }
 
-//Remove o paciente pelo CPF
 void ArquivoPacientes::DeleteWithCpf(string cpf)
 {
     for (int i = 0; i < this->pacientes.size(); i++)
@@ -57,12 +50,10 @@ void ArquivoPacientes::DeleteWithCpf(string cpf)
     }
 }
 
-//Retorna as datas de entrada e saÃ­da, caso houver
 DateInOut ArquivoPacientes::getDataPaciente(int pos){
     return this->dateInOut[pos];
 }
 
-//Retorna um paciente pelo CPF
 Paciente ArquivoPacientes::Read(string cpf)
 {
   int pos;
@@ -70,10 +61,8 @@ Paciente ArquivoPacientes::Read(string cpf)
       if (this->pacientes[i].get_cpf() == cpf)
         pos = i;
   return this->pacientes[pos];
-        
 }
 
-//ObtÃ©m a posiÃ§Ã£o no vetor de um paciente
 int ArquivoPacientes::ReadPos(string cpf)
 {
     for (int i = 0; i < this->pacientes.size(); i++)
@@ -82,12 +71,10 @@ int ArquivoPacientes::ReadPos(string cpf)
     return -1;
 }
 
-//ObtÃ©m o total de pacientes
 int ArquivoPacientes::Total() {
     return this->pacientes.size();
 }
 
-//Retorna o total de altas
 int ArquivoPacientes::TotalAlta()
 {
     int totalAlta = 0;
@@ -97,7 +84,6 @@ int ArquivoPacientes::TotalAlta()
     return totalAlta;
 }
 
-//Retorna o total de internados
 int ArquivoPacientes::TotalInternados()
 {
     int totalInternado = 0;
