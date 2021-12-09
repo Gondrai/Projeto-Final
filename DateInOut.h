@@ -9,8 +9,6 @@ struct Date
     int hour;
     int min;
     int sec;
-    bool valid; //false -> acabou de entrar: só printa data de entrada
-                //true -> entrou e saiu: printa entrada e saida
 };
 
 class DateInOut
