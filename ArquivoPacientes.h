@@ -17,12 +17,12 @@ public:
     ArquivoPacientes();
     void Create(Paciente P);          // Cria um paciente
     void Update(Paciente p, int pos); // Atualiza um paciente
-    void Delete();                    // Deleta o Ãºltimo paciente inserido
+    void Delete();                    // Deleta o último paciente inserido
     void DeleteWithCpf(string cpf);   // Deleta um paciente em especifico
     void MarcarSaida(string cpf);     // Marca quando um paciente saiu
-    Paciente Read(int i);             // Obtem um paciente por posiÃ§Ã£o
+    Paciente Read(int i);             // Obtem um paciente dada sua posição no vetor
     Paciente Read(string cpf);        // Obtem um paciente pelo cpf
-    int ReadPos(string cpf);          // Obtem a posiÃ§Ã£o no vetor para um paciente
+    int ReadPos(string cpf);          // Obtem a posição no vetor para um paciente
     int Total();                      // Retorna total de pacientes
     int TotalAlta();                  // Obtem total de altas
     int TotalInternados();            // Total de internados
