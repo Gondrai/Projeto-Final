@@ -19,7 +19,7 @@ class DateInOut
 public:
     struct Date in;  // Data de entrada
     struct Date out; // Data de saida
-    DateInOut();
+    DateInOut(); // Inicializa os atributos de in e out com valor -1
     ~DateInOut(){}
     void gen_Date_in(); // Adiciona a data atual na variável da data de entrada
     void gen_Date_out(); // Adiciona a data atual na variável da data de saída
