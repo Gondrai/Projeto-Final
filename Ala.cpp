@@ -4,6 +4,23 @@
 #include "Ala.h"
 Ala::Ala() {}
 
+void Ala::Menu(int opc){
+    cout << "MENU" <<;
+    cout << "1 -  Criar Sala" <<;
+    cout << "2 -  Retornar uma sala pela posição" <<;
+    cout << "3 -  Atualizar uma sala pela posição" <<;
+    cout << "4 -  Deleta ultima sala" <<;
+    cout << "5 -  Deleta sala pela posição" <<;
+    cout << "6 -  Retorna a taxa de ocupação de leitos na ala" <<;
+    cout << "7 -  Retorna a taxa de ocupação de leitos na ala" <<;
+    cout << "8 -  Retorna a taxa de desocupação de leitos na ala" <<;
+    cout << "9 -  Retorna o total de leitos da ala" <<;
+    cout << "10 - Retorna o total de salas na ala" <<;
+    cout << "Favor informar a atividade que deseja realizar:" <<;
+    cin >> opc;
+    //PRECISO CRIAR AS OPÇÕES
+}
+
 //Cria uma ala passando o total desejado de salas
 Ala::Ala(int total_salas)
 {
