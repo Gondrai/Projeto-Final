@@ -6,6 +6,7 @@
 #include "Paciente.h"
 #include "DateInOut.h"
 
+
 using namespace std;
 
 class ArquivoPacientes
@@ -13,8 +14,10 @@ class ArquivoPacientes
 private:
     vector<Paciente> pacientes; //vetor para armazenar os pacientes
     vector<DateInOut> dateInOut; //vetor para armazenar as datas de saida e entrada de cada um
+    vector<DateInOut> dateInOut; 
 public:
     ArquivoPacientes();
+    void Menu(int escolha);           // Acessa opções
     void Create(Paciente P);          // Cria um paciente
     void Update(Paciente p, int pos); // Atualiza um paciente
     void Delete();                    // Deleta o último paciente inserido
