@@ -10,6 +10,7 @@ public:
     Ala();
     Ala(int total_salas);
     ~Ala();
+    void Menu(int opc);
     void Create();                   // Cria uma sala nova
     void Create(Sala sala);          // Insere uma sala
     Sala Read(int pos);              // Obtem uma sala em especifico
