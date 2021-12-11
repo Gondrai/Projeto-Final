@@ -37,7 +37,18 @@ void ArquivoPacientes::Menu(int escolha){
     {
          void ArquivoPacientes::Update();
     }
-    
+    If (escolha = 5)
+    {
+         void ArquivoPacientes::Delete();
+    }
+    If (escolha = 6)
+    {
+         void ArquivoPacientes::DeleteWithCpf();
+    }
+    If (escolha = 7)
+    {
+         int ArquivoPacientes::TotalAlta();
+    }
 }
 
 void ArquivoPacientes::Create(Paciente p)
