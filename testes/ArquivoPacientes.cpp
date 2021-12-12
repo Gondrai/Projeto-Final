@@ -16,28 +16,28 @@ void ArquivoPacientes::Create(Paciente p)
     
 }
 
-//MÃ©todo que marca a saÃ­da (alta) de um paciente
+//Método que marca a saída (alta) de um paciente
 void ArquivoPacientes::MarcarSaida(string cpf)
 {
-    // Marca a saÃ­da do paciente
+    // Marca a saída do paciente
     int pos = this->ReadPos(cpf);
     this->dateInOut[pos].gen_Date_out();
     this->pacientes[pos].set_situacao("alta");
 }
 
-//Retorna um paciente pela posiÃ§Ã£o
+//Retorna um paciente pela posição
 Paciente ArquivoPacientes::Read(int i)
 {
     return this->pacientes[i];
 }
 
-//MÃ©todo que atualiza um paciente, passando seus dados e a posiÃ§Ã£o
+//Método que atualiza um paciente, passando seus dados e a posição
 void ArquivoPacientes::Update(Paciente p, int i)
 {
     this->pacientes[i] = p;
 }
 
-//Remove o Ãºltimo paciente
+//Remove o último paciente
 void ArquivoPacientes::Delete()
 {
     this->pacientes.pop_back(); //remove o ultimo paciente do vetor
@@ -58,7 +58,7 @@ void ArquivoPacientes::DeleteWithCpf(string cpf)
     }
 }
 
-//Retorna as datas de entrada e saÃ­da, caso houver
+//Retorna as datas de entrada e saída, caso houver
 DateInOut ArquivoPacientes::getDataPaciente(int pos){
     return this->dateInOut[pos];
 }
@@ -74,7 +74,7 @@ Paciente ArquivoPacientes::Read(string cpf)
         
 }
 
-//ObtÃ©m a posiÃ§Ã£o no vetor de um paciente
+//Obtém a posição no vetor de um paciente
 int ArquivoPacientes::ReadPos(string cpf)
 {
     for (int i = 0; i < this->pacientes.size(); i++)
@@ -83,7 +83,7 @@ int ArquivoPacientes::ReadPos(string cpf)
     return -1;
 }
 
-//ObtÃ©m o total de pacientes
+//Obtém o total de pacientes
 int ArquivoPacientes::Total() {
     return this->pacientes.size();
 }
