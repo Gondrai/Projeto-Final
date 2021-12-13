@@ -38,7 +38,7 @@ void Ala::Menu(int opcao){
             Sala::Sala();
             break;
          default:
-            other++;
+            cout << "Sessã encerrada" << endl;;
       }
    }
 }
