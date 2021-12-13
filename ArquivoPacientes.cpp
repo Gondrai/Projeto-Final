@@ -6,51 +6,6 @@ ArquivoPacientes::ArquivoPacientes()
 {
 }
 
-void ArquivoPacientes::Menu(int escolha){
-    cout << "MENU" <<;
-    cout << "1 -  Criar" <<;
-    cout << "2 -  Marcar saída" <<;
-    cout << "3 -  Ler" <<;
-    cout << "4 -  Atualizar" <<;
-    cout << "5 -  Deletar" <<;
-    cout << "6 -  Deletar com CPF" <<;
-    cout << "7 -  Dizer o total de altas" <<;
-    cout << "Favor informar a atividade que deseja realizar:" <<;
-    cin >> escolha;
-    If (escolha = 0)
-    {
-        cout << "Opção inexistente" ;
-    }
-    If (escolha = 1)
-    {
-         void ArquivoPacientes::Create();
-    }
-    If (escolha = 2)
-    {
-         void ArquivoPacientes::MarcarSaida();
-    }
-    If (escolha = 3)
-    {
-         Paciente ArquivoPacientes::Read();
-    }
-    If (escolha = 4)
-    {
-         void ArquivoPacientes::Update();
-    }
-    If (escolha = 5)
-    {
-         void ArquivoPacientes::Delete();
-    }
-    If (escolha = 6)
-    {
-         void ArquivoPacientes::DeleteWithCpf();
-    }
-    If (escolha = 7)
-    {
-         int ArquivoPacientes::TotalAlta();
-    }
-}
-
 void ArquivoPacientes::Create(Paciente p)
 {   
     DateInOut dateIn;
