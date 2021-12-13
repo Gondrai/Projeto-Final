@@ -39,14 +39,6 @@ void Hospital::Delete(int pos)
     this->alas.erase(this->alas.begin() + pos);
 }
 
-/*void Hospital::InternarPaciente(Paciente p, int pos)
-{
-	string cpf = p.get_cpf();
-	this->arquivoPacientes.Create(p);
-	int i = this->arquivoPacientes.ReadPos(cpf);
-	this->alas[pos] =
-}*/
-
 void Hospital::relatorio_estatistico()
 {
     cout << "-------------------------------------------------------------" << endl;
@@ -54,7 +46,7 @@ void Hospital::relatorio_estatistico()
     cout << "-------------------------------------------------------------" << endl;
     cout << endl;
     
-    // Informações sobre os pacientes
+    // InformaÃ§Ãµes sobre os pacientes
     cout << "Total de pacientes que passaram no hospital: " << this->arquivoPacientes.Total() << endl;
     cout << "Total de internados: " << this->arquivoPacientes.TotalInternados() << endl;
     cout << "Total de altas: " << this->arquivoPacientes.TotalAlta() << endl;
@@ -88,7 +80,7 @@ void Hospital::relatorio_estatistico()
         cout << endl;
     }
 
-    // Investiga cada usuário
+    // Investiga cada usuÃ¡rio
     for (int i = 0; i < this->arquivoPacientes.Total(); i++) {
         Paciente paciente = this->arquivoPacientes.Read(i);
         DateInOut datePaciente = this->arquivoPacientes.getDataPaciente(i);
