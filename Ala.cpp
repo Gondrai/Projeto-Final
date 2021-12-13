@@ -5,18 +5,18 @@
 Ala::Ala() {}
 
 void Ala::Menu(int opc){
-    cout << "MENU" <<;
-    cout << "1 -  Criar Sala" <<;
-    cout << "2 -  Retornar uma sala pela posição" <<;
-    cout << "3 -  Atualizar uma sala pela posição" <<;
-    cout << "4 -  Deleta ultima sala" <<;
-    cout << "5 -  Deleta sala pela posição" <<;
-    cout << "6 -  Retorna a taxa de ocupação de leitos na ala" <<;
-    cout << "7 -  Retorna a taxa de ocupação de leitos na ala" <<;
-    cout << "8 -  Retorna a taxa de desocupação de leitos na ala" <<;
-    cout << "9 -  Retorna o total de leitos da ala" <<;
-    cout << "10 - Retorna o total de salas na ala" <<;
-    cout << "Favor informar a atividade que deseja realizar:" <<;
+    cout << "MENU" << endl;
+    cout << "1 -  Criar Sala" << endl;
+    cout << "2 -  Retornar uma sala pela posição" << endl;
+    cout << "3 -  Atualizar uma sala pela posição" << endl;
+    cout << "4 -  Deleta ultima sala" << endl;
+    cout << "5 -  Deleta sala pela posição" << endl;
+    cout << "6 -  Retorna a taxa de ocupação de leitos na ala" << endl;
+    cout << "7 -  Retorna a taxa de ocupação de leitos na ala" << endl;
+    cout << "8 -  Retorna a taxa de desocupação de leitos na ala" << endl;
+    cout << "9 -  Retorna o total de leitos da ala" <<< endl;
+    cout << "10 - Retorna o total de salas na ala" << endl;
+    cout << "Favor informar a atividade que deseja realizar:" << endl;
     cin >> opc;
     //PRECISO CRIAR AS OPÇÕES
 }
