@@ -7,6 +7,6 @@ private:
 
 public:
     Menu();
-    Menu(int opcao);
+    Menu(int opcao=0);
     ~Menu();
 }
