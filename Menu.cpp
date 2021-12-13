@@ -7,7 +7,7 @@
 #include "Sala.h"
 #include "Hospital.h"
 
-Menu::Menu() {}
+Menu::Menu() {};
 
 void Ala::Menu(int opcao){
     cout << "MENU" << endl;
