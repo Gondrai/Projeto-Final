@@ -1,17 +1,9 @@
 // Controle e gerenciamento de paciente.
 #include <iostream>
-#include <vector>
-#include <string>
-#include <stdlib.h>
-#include "Paciente.h"
-#include "Leito.h"
-#include "ArquivoPacientes.h"
-#include "Sala.h"
-#include "DateInOut.h"
-#include "Ala.h"
 #include "Hospital.h"
-#include "Menu.h"
+
 using namespace std;
+
 int main()
 {
     Paciente * p1 = new Paciente("563.732.250-38", "Gabriel", "Quadra 912 Sul Alameda 8", "(63) 99996-2471", "A", 18);
@@ -73,7 +65,6 @@ int main()
     hospital->Create(*ala1);
     hospital->Create(*ala2);
     //Imprimindo relatório final
-    Menu::Menu();
     hospital->relatorio_estatistico();
     return 0;
 }
