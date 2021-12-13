@@ -5,7 +5,7 @@
 #include "ArquivoPacientes.h"
 #include <iostream>
 
-struct endereco_internacao // armazena os indices para o vetor de ala, sala e leito no qual o paciente est· internado
+struct endereco_internacao // armazena os indices para o vetor de ala, sala e leito no qual o paciente est√° internado
 {
 	int ala;
 	int sala;
@@ -17,7 +17,7 @@ class Hospital
 private:
     vector<Ala> alas; //Vetor que armazena as alas do hospital
     ArquivoPacientes arquivoPacientes;
-    vector<endereco_internacao> endereco; //vetor de enderecos de internaÁ„o de cada paciente
+    vector<endereco_internacao> endereco; //vetor de enderecos de interna√ß√£o de cada paciente
     
 public:
     Hospital();
@@ -28,9 +28,7 @@ public:
     void Create(ArquivoPacientes);  //Insere os pacientes nos arquivos do hospital
     void Delete();                  // Deleta a ultima ala
     void Delete(int);               // Deleta uma ala especifica
-    //void InternarPaciente(Paciente, int);
-    //void InternarPaciente(string, int);
-    void relatorio_estatistico();   // RelatÛrios
+    void relatorio_estatistico();   // Relat√≥rios
 };
 
 #endif
