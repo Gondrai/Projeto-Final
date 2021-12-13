@@ -10,7 +10,7 @@ public:
     Leito(int valor); //Cria um leito com o valor desejado (ocupado ou desocupado)
     ~Leito();
     void set_ocupacao(int valor); //Definir como ocupado ou desocupado
-    int get_ocupacao();
+    int get_ocupacao(); //Retorna o valor armazenado no atributo "ocupado"
 };
 
 #endif
