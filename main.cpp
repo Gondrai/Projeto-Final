@@ -10,7 +10,6 @@
 #include "DateInOut.h"
 #include "Ala.h"
 #include "Hospital.h"
-#include "Menu.h"
 using namespace std;
 int main()
 {
@@ -73,7 +72,6 @@ int main()
     hospital->Create(*ala1);
     hospital->Create(*ala2);
     //Imprimindo relatório final
-    Menu::Menu();
     hospital->relatorio_estatistico();
     return 0;
 }
