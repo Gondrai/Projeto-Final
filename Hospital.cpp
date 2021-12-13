@@ -1,3 +1,14 @@
+#ifndef HOSPITAL_H
+#define HOSPITAL_H
+
+#include <string>
+#include <iostream>
+#include <vector>
+#include "Paciente.h"
+#include "Hospital.h"
+#include "DateInOut.h"
+#include "Ala.h"
+#include "ArquivoPacientes.h"
 Hospital::Hospital() {}
 
 //Construtor que cria o hospital informando o total de alas
@@ -90,3 +101,4 @@ void Hospital::relatorio_estatistico()
         }
     }
 }
+#endif
